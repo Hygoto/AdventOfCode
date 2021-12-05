@@ -2,9 +2,9 @@ package Day5;
 import java.io.File;
 import java.util.Scanner;
 
-public class D5 {
+public class D5_2 {
     public static void main(String[] args) throws Exception {
-        int x1, x2, y1, y2, length;
+        int x1, x2, y1, y2, length, lenght;
         int c = 0;
         int[][] grid = new int[1000][1000];
         File input = new File("./src/Day5/input");
@@ -29,6 +29,17 @@ public class D5 {
                     grid[x1][y1-length] ++;
                     if (length > 0) length--;
                     if (length < 0) length++;
+                }
+            }
+            else {
+                length = x1-x2;
+                lenght = y1-y2;
+                for (int w = Math.abs(length); w >= 0; w--) {
+                    grid[x1-length][y1-lenght] ++;
+                    if (length > 0) length--;
+                    if (length < 0) length++;
+                    if (lenght > 0) lenght--;
+                    if (lenght < 0) lenght++;
                 }
             }
         }
