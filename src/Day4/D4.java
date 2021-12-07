@@ -6,7 +6,7 @@ import java.io.File;
 public class D4 {
     public static void main(String[] args) throws Exception {
         File input = new File("./src/Day4/input");
-        Scanner idraw = new Scanner(input).useDelimiter(",");
+        Scanner idraw = new Scanner(input).useDelimiter(",|\\n");
         Scanner i = new Scanner(input);
         int turns = 9999;
         int sum = 0;
