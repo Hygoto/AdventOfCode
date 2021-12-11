@@ -1,4 +1,4 @@
-package Day1;
+package Day01;
 import java.util.Scanner;
 import java.io.File;
 public class D1_2 {

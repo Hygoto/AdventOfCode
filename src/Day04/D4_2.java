@@ -1,4 +1,4 @@
-package Day4;
+package Day04;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.io.File;
