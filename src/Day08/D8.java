@@ -7,7 +7,7 @@ public class D8 {
     public static void main(String[] args) throws Exception {
         String seg;
         int  c = 0;
-        File input = new File("./src/Day8/input");
+        File input = new File("./src/Day08/input");
         Scanner i = new Scanner(input);
         while (i.hasNext()) {
             seg = i.next();

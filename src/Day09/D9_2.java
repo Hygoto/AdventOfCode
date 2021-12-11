@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class D9_2 {
     public static void main(String[] args) throws Exception {
-        File input = new File("./src/Day9/input");
+        File input = new File("./src/Day09/input");
         Scanner i = new Scanner(input);
         String tmp;
         int z, c;

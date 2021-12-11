@@ -19,7 +19,7 @@ public class D3 {
         int s11 = 0;
         int z = 0;
         String tmp;
-        File input = new File("./src/Day3/input");
+        File input = new File("./src/Day03/input");
         Scanner i = new Scanner(input);
         while (i.hasNextLine()){
             tmp = i.nextLine();

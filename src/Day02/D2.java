@@ -5,7 +5,7 @@ public class D2 {
     public static void main(String[] args) throws Exception {
         int x = 0;
         int y = 0;
-        File input = new File("./src/Day2/input");
+        File input = new File("./src/Day02/input");
         Scanner i = new Scanner(input);
         while (i.hasNextLine()){
             switch (i.next()){

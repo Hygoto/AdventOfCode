@@ -5,7 +5,7 @@ import java.io.File;
 
 public class D9 {
     public static void main(String[] args) throws Exception {
-        File input = new File("./src/Day9/input");
+        File input = new File("./src/Day09/input");
         Scanner i = new Scanner(input);
         int[][] h = new int[100][100];
         String tmp;

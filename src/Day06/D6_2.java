@@ -9,7 +9,7 @@ public class D6_2 {
         int days = 256;
         long tmp, n;
         int t;
-        File input = new File("./src/Day6/input");
+        File input = new File("./src/Day06/input");
         Scanner i = new Scanner(input).useDelimiter(",");
 
         while (i.hasNextInt()) {

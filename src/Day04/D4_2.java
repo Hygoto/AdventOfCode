@@ -5,7 +5,7 @@ import java.io.File;
 
 public class D4_2 {
     public static void main(String[] args) throws Exception {
-        File input = new File("./src/Day4/input");
+        File input = new File("./src/Day04/input");
         Scanner idraw = new Scanner(input).useDelimiter(",");
         Scanner i = new Scanner(input);
         int turns = 0;

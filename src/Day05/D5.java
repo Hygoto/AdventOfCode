@@ -7,7 +7,7 @@ public class D5 {
         int x1, x2, y1, y2, length;
         int c = 0;
         int[][] grid = new int[1000][1000];
-        File input = new File("./src/Day5/input");
+        File input = new File("./src/Day05/input");
         Scanner l = new Scanner(input).useDelimiter(",| -> |\\n");
 
         while (l.hasNextLine()) {

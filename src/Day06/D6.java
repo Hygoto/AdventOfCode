@@ -8,7 +8,7 @@ public class D6 {
         int[] timer = new int[9];
         int days = 80;
         int tmp, n;
-        File input = new File("./src/Day6/input");
+        File input = new File("./src/Day06/input");
         Scanner i = new Scanner(input).useDelimiter(",");
 
         while (i.hasNextInt()) {

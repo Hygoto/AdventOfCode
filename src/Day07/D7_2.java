@@ -9,7 +9,7 @@ public class D7_2 {
         int ftmp = 0;
         int f = 2147483647;
         int d;
-        File input = new File("./src/Day7/input");
+        File input = new File("./src/Day07/input");
         Scanner i = new Scanner(input).useDelimiter(",");
         for (int s = 0; s < 1000; s++) {
             crab[s] = i.nextInt();

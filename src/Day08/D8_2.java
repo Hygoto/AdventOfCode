@@ -11,7 +11,7 @@ public class D8_2 {
         boolean r = false;
         int tmp, tmp2, tmp3;
         int  c = 0;
-        File input = new File("./src/Day8/input");
+        File input = new File("./src/Day08/input");
         Scanner i = new Scanner(input);
         while (i.hasNextLine()) {
             Arrays.fill(seg, null);

@@ -18,7 +18,7 @@ public class D3_2 {
         int tmmpc = 0;
         int tmmptmp;
         int z = 0; 
-        File input = new File("./src/Day3/input");
+        File input = new File("./src/Day03/input");
         Scanner i = new Scanner(input);
         while (i.hasNextLine()){
             arr[z] = i.nextLine();
