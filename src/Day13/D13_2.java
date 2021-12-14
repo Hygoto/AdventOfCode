@@ -47,6 +47,7 @@ public class D13_2 {
                 if (sheet[s][w]) writer.print("#");
                 else writer.print(".");
                 if (w == size-1) writer.print("\n");
+                writer.close();
             }
         }
     }
