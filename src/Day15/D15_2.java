@@ -9,7 +9,7 @@ public class D15_2 {
     private static int[][] m = new int[size*5][size*5];
     private static int[][] n = new int[size*5][size*5];
     public static void main(String[] args) throws Exception {
-        File input = new File("./src/Day15/inputt");
+        File input = new File("./src/Day15/input");
         Scanner i = new Scanner(input);
         String t;
         for (int s = 0; s < size; s++) {
@@ -40,10 +40,11 @@ public class D15_2 {
     }
     static void danger(int a, int b) { 
         boolean[][] v = new boolean[size*5][size*5];
-        v[0][0] = true;
+        int[] l = new int[3];
         while (!v[size*5-1][size*5-1]) {
             if (a+1 < size*5 && !v[a+1][b] && n[a][b] + m[a+1][b] < n[a+1][b]) {
                 n[a+1][b] = n[a][b] + m[a+1][b];
+
             }
             if (b+1 < size*5 && !v[a][b+1] && n[a][b] + m[a][b+1] < n[a][b+1]) {
                 n[a][b+1] = n[a][b] + m[a][b+1];
@@ -55,11 +56,18 @@ public class D15_2 {
                 n[a][b-1] = n[a][b] + m[a][b-1];
             }
             v[a][b] = true;
-            if (a+1 >= size*5) {
-                b++;
-                a = 0;
+            l[0] = Integer.MAX_VALUE;
+            for (int x = 0; x < size*5; x++) {
+                for (int y = 0; y < size*5; y++) {
+                    if (!v[x][y] && n[x][y] < l[0]) {
+                        l[0] = n[x][y];
+                        l[1] = x;
+                        l[2] = y;
+                    }
+                }
             }
-            else a++;
+            a = l[1];
+            b = l[2];
         }
     }
 }
