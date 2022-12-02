@@ -2,7 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 const rl = readline.createInterface({
-    input: fs.createReadStream('./2022/Day1/input'),
+    input: fs.createReadStream('./2022/Day01/input'),
     crlfDelay: Infinity,
   });
 
