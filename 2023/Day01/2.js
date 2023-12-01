@@ -13,7 +13,6 @@ rl.on('line', (line) => {
   let b = line.split("").reverse().join("").match(/\d|(orez)|(eno)|(owt)|(eerht)|(ruof)|(evif)|(xis)|(neves)|(thgie)|(enin)/g);
   if (!(a[0] >= 0)) a[0] = numbers[a[0]];
   if (!(b[0] >= 0)) b[0] = numbers[b[0].split("").reverse().join("")];
-  console.log(b[0]);
   sum += parseInt(`${a[0]}` + `${b[0]}`);
 });
 rl.on('close', () => console.log(sum));
