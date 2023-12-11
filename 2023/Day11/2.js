@@ -6,8 +6,8 @@ const rl = readline.createInterface({
     input: fs.createReadStream('./2023/Day11/input'),
     crlfDelay: Infinity,
 });
-;
-let xExpand = []
+
+let xExpand = [];
 let yExpand = [];
 let map = [];
 let row = 0;
